@@ -1,0 +1,160 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    --button-color:#009688;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    background-color: var(--button-color);
+    color: var(--section-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+    color: var(--yellow-color);
+}
+.main-title::after{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+}
+/* start navbar */
+.navbar{
+    background-color: var(--dark-color);
+}
+.nav-item .nav-link{
+    color:var(--section-color);
+}
+
+.nav-item .nav-link:hover{
+    color: var(--green-color);
+}
+.search {
+    border-left: 1px solid var(--green-color) ;
+    color: var(--green-color);
+}
+.navbar-toggler {
+    color: var(--section-color);
+    border: 1px solid var(--section-color);
+    font-size: 22px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+/* end navbar */
+/* start landing */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px) ;
+}
+/* end landing */
+/* start Features */
+.Features .icon-holder {
+    height: 200px;
+}
+.Features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.Features .icon-holder .icon{
+    font-size: 4rem;
+    color: var(--green-color);
+}
+.Features h4 {
+    color: var(--yellow-color);
+}
+/* end Features */
+/* start Sevices */
+.Services{
+    background-color:var(--section-color);
+}
+.Services ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.Services ul li:hover {
+    color: var(--red-color);
+}
+.Services .box {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.Services .box::before {
+content: attr(data-serv);
+position: absolute;
+width: calc(100% - 10px);
+height: calc(100% - 10px);
+background-color: #009688bd;
+color: white;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.3s ;
+transform: translateX(calc(-100% - 5px));
+}
+.Services .box:hover:before {
+    transform: translateX(0)
+}
+/* end Sevices */
+/* start Stuff */
+.Stuff .desc {
+    max-width: 500px;
+}
+/* end Stuff */
+/* start team */
+.Team {
+    background-color:var(--section-color);
+}
+.Team .text h2 {
+    color: var(--yellow-color);
+}
+.Team .text p {
+    max-width:80%;
+}
+.Team h3 {
+    background-color: var(--green-color);
+}
+/* end team */
+/* start project */
+.project {
+    background-color: var(--dark-color);
+}
+/* end project */
+/* start subscr */
+.subscr {
+    background-color: var(--yellow-color);
+}
+.subscr input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscr input[type="text"]:focus{
+    outline: none;
+
+}
+.subscr input::placeholder{
+    color: white;
+}
+.subscr input[type="submit"]{
+    background-color:var(--dark-color);
+    color: var(--yellow-color); 
+}
+/* start subscr */
